@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: запросы по ТЗ п.5. Основные — «маркировка честный знак», «таможенный склад Казань». -->
+  <title>Таможенный склад в Казани — маркировка товаров «Честный знак»</title>
+  <meta name="description" content="Маркировка товаров «Честный знак» на собственном таможенном складе в Казани, включая алкогольную продукцию (лицензия РАР). Хранение до 3 лет, процедура ИМ-70. Звоните: +7 919 635 70 42.">
+  <meta name="keywords" content="маркировка честный знак, таможенный склад Казань, маркировка товаров Казань, маркировка импорта, ИМ-70, маркировка продуктов питания на таможенном складе, маркировка алкоголя Честным знаком">
+  <!-- Canonical — вписать после выбора домена (этап 3). -->
+  <!-- <link rel="canonical" href="https://ДОМЕН/"> -->
+  <meta property="og:title" content="Таможенный склад в Казани — маркировка товаров «Честный знак»">
+  <meta property="og:description" content="Маркировка «Честный знак» на таможенном складе в Казани: алкоголь (лицензия РАР), продукты питания, вода, бакалея и др. Хранение до 3 лет, ИМ-70.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <!-- og:image — вписать абсолютный URL после выбора домена (фото: assets/warehouse-hero-6.webp) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       Визуальные токены — по образцу rsh-group.ru:
+       белый фон, тёмно-синие заголовки, синий акцент кнопок.
+       ============================================================ */
+    :root {
+      --c-primary:   #1e355c;  /* тёмно-синий: шапка, заголовки */
+      --c-accent:    #0089f7;  /* синий акцент: кнопки, ссылки */
+      --c-accent-h:  #006fd0;  /* акцент при наведении */
+      --c-green:     #38a875;  /* второстепенный акцент */
+      --c-text:      #333333;  /* основной текст */
+      --c-muted:     #626262;  /* второстепенный текст */
+      --c-bg:        #ffffff;
+      --c-bg-soft:   #f7f7f7;  /* подложка чередующихся секций */
+      --c-border:    #ebebeb;
+      --c-error:     #c0392b;
+      --c-ok:        #2e7d52;
+      --font: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      --radius: 8px;
+      --shadow: 0 2px 12px rgba(30, 53, 92, .10);
+      --container: 1140px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--c-text);
+      background: var(--c-bg);
+    }
+    img { max-width: 100%; display: block; }
+    h1, h2, h3 { color: var(--c-primary); line-height: 1.25; margin: 0 0 .6em; }
+    h2 { font-size: 1.8rem; font-weight: 700; }
+    p { margin: 0 0 1em; }
+    a { color: var(--c-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 20px; }
+    .section { padding: 64px 0; }
+    .section--soft { background: var(--c-bg-soft); }
+    .placeholder-note { color: var(--c-muted); font-style: italic; }
+
+    /* ---------- Кнопки ---------- */
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border: none;
+      border-radius: var(--radius);
+      font-family: var(--font);
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .15s ease, transform .15s ease;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn--accent { background: var(--c-accent); color: #fff; }
+    .btn--accent:hover { background: var(--c-accent-h); }
+    .btn--outline { background: transparent; color: var(--c-primary); border: 2px solid var(--c-primary); }
+    .btn--outline:hover { background: var(--c-primary); color: #fff; }
+    .btn--big { padding: 16px 34px; font-size: 1.05rem; }
+
+    /* ---------- Шапка ---------- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid var(--c-border);
+      box-shadow: 0 1px 6px rgba(30, 53, 92, .06);
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 64px;
+    }
+    .logo { font-weight: 800; font-size: 1.1rem; color: var(--c-primary); white-space: nowrap; }
+    .logo span { color: var(--c-accent); }
+    .nav { display: flex; align-items: center; gap: 22px; }
+    .nav a { color: var(--c-primary); font-weight: 600; font-size: .95rem; }
+    .nav a:hover { color: var(--c-accent); text-decoration: none; }
+    .header__phone { font-weight: 800; color: var(--c-primary); font-size: 1.05rem; white-space: nowrap; }
+    .header__phone:hover { color: var(--c-accent); text-decoration: none; }
+    /* Бургер-меню (мобильные) */
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .burger span { width: 24px; height: 2px; background: var(--c-primary); }
+
+    /* ---------- Первый экран ---------- */
+    .hero {
+      background: var(--c-primary);
+      color: #fff;
+      padding: 72px 0 80px;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(1.7rem, 4.5vw, 3rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__subtitle { font-size: clamp(1rem, 2vw, 1.25rem); color: rgba(255,255,255,.9); max-width: 720px; margin-left: auto; margin-right: auto; }
+    .hero__phone {
+      display: inline-block;
+      margin: 22px 0;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .hero__phone:hover { color: #cfe8ff; text-decoration: none; }
+    .hero__buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+    .hero__buttons .btn--outline { color: #fff; border-color: #fff; }
+    .hero__buttons .btn--outline:hover { background: #fff; color: var(--c-primary); }
+    /* Фото склада фоном — вставляется через CSS-переменную --hero-photo (итерация 3) */
+    .hero--photo {
+      background-image: linear-gradient(rgba(30, 53, 92, .82), rgba(30, 53, 92, .82)), var(--hero-photo, none);
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* ---------- Галерея склада ---------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      border: 1px solid var(--c-border);
+    }
+
+    /* ---------- Секции контента ---------- */
+    .section-head { max-width: 760px; margin-bottom: 32px; }
+    /* Якоря не должны прятаться под sticky-шапкой */
+    section[id] { scroll-margin-top: 76px; }
+
+    /* ---------- Сетка карточек (услуги, преимущества) ---------- */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 { font-size: 1.05rem; margin-bottom: .4em; }
+    .card p { margin: 0; font-size: .95rem; color: var(--c-muted); }
+    .card--accent { border-top: 3px solid var(--c-green); }
+    .card__badge {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: rgba(56, 168, 117, .12);
+      color: var(--c-green);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .3px;
+    }
+    .cards--list { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .cards--list .card { padding: 16px 14px; text-align: center; }
+    .cards--list .card p { color: var(--c-text); font-weight: 600; font-size: .95rem; }
+
+    /* ---------- FAQ (аккордеон на details/summary) ---------- */
+    .faq-list { max-width: 860px; }
+    .faq-list details {
+      background: #fff;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+    }
+    .faq-list summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 52px 16px 18px;
+      font-weight: 600;
+      color: var(--c-primary);
+      position: relative;
+      line-height: 1.4;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+';
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--c-accent);
+      transition: transform .15s ease;
+    }
+    .faq-list details[open] summary::after { content: '−'; }
+    .faq-list details p { padding: 0 18px 16px; margin: 0; color: var(--c-muted); }
+
+    /* ---------- Контакты ---------- */
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .contacts-grid h3 { font-size: 1.02rem; }
+    .contact-city {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--c-primary);
+      margin-bottom: 4px;
+    }
+    .contact-address { color: var(--c-muted); font-size: .95rem; }
+    .contact-list { list-style: none; padding: 0; margin: 0; }
+    .contact-list li { margin-bottom: 10px; }
+    .contact-list a { font-weight: 700; color: var(--c-primary); font-size: 1.05rem; }
+    .contact-list a:hover { color: var(--c-accent); text-decoration: none; }
+    .contact-meta { margin-top: 18px; }
+    .contact-meta p { margin-bottom: 6px; }
+    .map-frame {
+      width: 100%;
+      min-height: 380px;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      margin-top: 8px;
+    }
+
+    /* ---------- Форма заявки ---------- */
+    .form-wrap { max-width: 560px; }
+    .form {
+      background: #fff;
+      padding: 28px;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .field { margin-bottom: 18px; }
+    .field label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--c-primary); }
+    .field input[type="text"],
+    .field input[type="tel"] {
+      width: 100%;
+      padding: 13px 14px;
+      font-family: var(--font);
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      color: var(--c-text);
+      background: #fff;
+    }
+    .field input:focus { outline: 2px solid var(--c-accent); outline-offset: 0; border-color: var(--c-accent); }
+    .field input[aria-invalid="true"] { border-color: var(--c-error); }
+    /* Honeypot: реальному человеку поле не видно; боты заполняют его */
+    .field--hp {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .field-error {
+      display: none;
+      margin-top: 6px;
+      color: var(--c-error);
+      font-size: .9rem;
+      font-weight: 500;
+    }
+    .field-error.visible { display: block; }
+    .form__consent { display: flex; gap: 10px; align-items: flex-start; font-size: .85rem; color: var(--c-muted); }
+    .form__consent input { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; accent-color: var(--c-accent); }
+    .form__consent a { color: var(--c-accent); }
+    .form__actions { margin-top: 20px; }
+    .form__actions .btn { width: 100%; }
+    .form__actions .btn[disabled] { opacity: .6; cursor: wait; }
+    /* Экран подтверждения */
+    .form-success { display: none; text-align: center; padding: 12px 0; }
+    .form-success.visible { display: block; }
+    .form-success__icon { font-size: 2.6rem; color: var(--c-ok); line-height: 1; }
+    .form-success h3 { margin: 14px 0 8px; }
+    .form-success p { color: var(--c-muted); margin-bottom: 14px; }
+    /* Общий блок ошибки (антиспам) */
+    .form-alert {
+      display: none;
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      background: #fdeceb;
+      border: 1px solid #f5c6c2;
+      color: var(--c-error);
+      font-size: .92rem;
+    }
+    .form-alert.visible { display: block; }
+
+    /* ---------- Плавающая кнопка «Заказать звонок» ---------- */
+    .fab {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 90;
+      display: none; /* показывается после прокрутки первого экрана (JS) */
+      align-items: center;
+      gap: 8px;
+      padding: 13px 22px;
+      background: var(--c-green);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 40px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
+      font-size: .95rem;
+    }
+    .fab:hover { background: #2d8a61; text-decoration: none; color: #fff; }
+    .fab.visible { display: inline-flex; }
+
+    /* ---------- Подвал ---------- */
+    .footer {
+      background: var(--c-primary);
+      color: rgba(255,255,255,.85);
+      padding: 28px 0;
+      font-size: .9rem;
+    }
+    .footer a { color: #cfe8ff; }
+    .footer__inner { display: flex; flex-wrap: wrap; gap: 10px 30px; justify-content: space-between; }
+
+    /* ---------- Мобильная адаптация (основной трафик — телефоны, ТЗ) ---------- */
+    @media (max-width: 860px) {
+      .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        background: #fff;
+        border-bottom: 1px solid var(--c-border);
+        box-shadow: var(--shadow);
+        padding: 8px 20px;
+      }
+      .nav.open { display: flex; }
+      .nav a { padding: 12px 0; width: 100%; border-bottom: 1px solid var(--c-bg-soft); }
+      .burger { display: flex; }
+      .header__phone { font-size: .95rem; }
+    }
+    @media (max-width: 600px) {
+      .section { padding: 44px 0; }
+      h2 { font-size: 1.4rem; }
+      .hero { padding: 48px 0 56px; }
+      .hero__buttons .btn { flex: 1 1 100%; }
+      .form { padding: 20px 16px; }
+      .gallery img { height: 130px; }
+      /* Критерий №1: кнопки первого экрана видны без прокрутки —
+         в hero уменьшены отступы, кнопки на всю ширину */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= Шапка ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#hero">ТРЛ · <span>Таможенный склад</span></a>
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#services">Услуги</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#order">Оставить заявку</a>
+      </nav>
+      <!-- Основной телефон из приложения А ТЗ; остальные 3 номера — в «Контактах» -->
+      <a class="header__phone" href="tel:+79196357042">+7 919 635 70 42</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= Первый экран ================= -->
+    <section class="hero hero--photo" id="hero" style="--hero-photo: url('assets/warehouse-hero-6.webp')">
+      <div class="container">
+        <!-- Формулировка и регистр заголовка — требование заказчика (ТЗ п.5.2), не менять -->
+        <h1>ТАМОЖЕННЫЙ СКЛАД В КАЗАНИ!</h1>
+        <p class="hero__subtitle">Маркировка товаров «Честный знак» на собственном таможенном складе — работаем в составе Казанского таможенного поста.</p>
+        <!-- Клик по номеру открывает звонок на мобильных (критерий №2) -->
+        <a class="hero__phone" href="tel:+79196357042">+7 919 635 70 42</a>
+        <div class="hero__buttons">
+          <a class="btn btn--accent btn--big" href="tel:+79196357042">Позвонить</a>
+          <a class="btn btn--outline btn--big" href="#order">Заказать звонок</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Услуги ================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Услуги</h2>
+          <p>Наносим коды маркировки «Честный знак» (Data Matrix) прямо на таможенном складе — до растаможки. Помещаем груз под процедуру ИМ-70, обеспечиваем хранение и дальнейшее оформление.</p>
+          <!-- Порядок категорий — требование заказчика: алкоголь первым, с лицензией РАР (ТЗ п.5.3); состав и формулировки — ТЗ и FAQ п.8 -->
+        </div>
+        <div class="cards">
+          <div class="card card--accent">
+            <span class="card__badge">Лицензия РАР</span>
+            <h3>Алкогольная и слабоалкогольная продукция</h3>
+            <p>Маркировка алкоголя «Честным знаком» на таможенном складе — по лицензии РАР.</p>
+          </div>
+          <div class="card"><h3>Продукты питания</h3><p>Маркировка продуктов питания на таможенном складе.</p></div>
+          <div class="card"><h3>Вода и соки</h3><p>Упакованная вода, соки и напитки.</p></div>
+          <div class="card"><h3>Бакалея</h3><p>Бакалейная продукция.</p></div>
+          <div class="card"><h3>Кондитерские изделия</h3><p>Кондитерская продукция.</p></div>
+          <div class="card"><h3>Растительное масло</h3><p>Растительные масла.</p></div>
+          <div class="card"><h3>Товары лёгкой промышленности</h3><p>Одежда, обувь и другие товары.</p></div>
+          <div class="card"><h3>Радиоэлектроника</h3><p>Электроника и радиоэлектронные товары.</p></div>
+          <div class="card"><h3>Бытовая химия</h3><p>Бытовая химия.</p></div>
+          <div class="card"><h3>Парфюм и др.</h3><p>Парфюмерия и другие категории, подлежащие обязательной маркировке.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Преимущества ================= -->
+    <section class="section section--soft" id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <h2>Преимущества</h2>
+          <!-- Состав — ТЗ п.5.4; факты — FAQ приложения А. Без номеров лицензии (ТЗ: реквизиты пришлют позже) -->
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Собственный таможенный склад</h3>
+            <p>Работаем на собственном таможенном складе — грузы помещаем под процедуру таможенного склада, срок хранения — до 3 лет.</p>
+          </div>
+          <div class="card">
+            <h3>Законность</h3>
+            <p>Вся работа по правилам таможенного склада. На алкогольную продукцию есть лицензия РАР.</p>
+          </div>
+          <div class="card">
+            <h3>Опыт</h3>
+            <p>Маркируем все категории товаров, подлежащие обязательной маркировке: алкоголь, продукты, вода, одежда, обувь, БАДы, электроника, парфюм, бытовая химия и др.</p>
+          </div>
+          <div class="card">
+            <h3>Скорость</h3>
+            <p>Коды наносим прямо на складе, до растаможки. Многие вопросы решаем дистанционно — приезжать не обязательно.</p>
+          </div>
+        </div>
+        <!-- Фотографии склада заказчика (Материалы заказчика, 22.09.2026). Фото 7 из материалов не публикуется — технически негодное (117×156 px) -->
+        <h3 style="margin-top:34px">Наш склад</h3>
+        <div class="gallery">
+          <img src="assets/warehouse-thumb-6.webp" alt="Ворота зоны таможенного контроля с табличками «Зона таможенного контроля» и «Таможенный склад»" loading="lazy" width="800" height="600">
+          <img src="assets/warehouse-thumb-1.webp" alt="Фасад таможенного склада с парковкой и погрузочными воротами" loading="lazy" width="800" height="600">
+          <img src="assets/warehouse-thumb-2.webp" alt="Вход на территорию таможенного склада со стальной лестницей" loading="lazy" width="800" height="600">
+          <img src="assets/warehouse-thumb-3.webp" alt="Огороженная зона таможенного контроля внутри склада с погрузчиком" loading="lazy" width="600" height="800">
+          <img src="assets/warehouse-thumb-4.webp" alt="Просторный складской ангар с ограждениями и рабочими столами" loading="lazy" width="800" height="600">
+          <img src="assets/warehouse-thumb-5.webp" alt="Погрузочные ворота склада с зелёными табличками" loading="lazy" width="800" height="600">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <!-- Текст 12 вопросов-ответов — дословно приложение А ТЗ (правки заказчика). Не переформулировать -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Частые вопросы</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Где вы находитесь?</summary>
+            <p>Таможенный склад в Казани — работаем в составе Казанского таможенного поста. Фактический адрес: Республика Татарстан, Зеленодольский район, Промышленная площадка, строение 7, корпус 2.</p>
+          </details>
+          <details>
+            <summary>Как к вам добраться?</summary>
+            <p>Схема проезда — на карте ниже. Точный маршрут можно уточнить по телефону.</p>
+          </details>
+          <details>
+            <summary>Работаете ли вы с физическими лицами?</summary>
+            <p>Мы работаем с юридическими лицами и индивидуальными предпринимателями. По вопросу частных лиц — уточняйте индивидуально.</p>
+          </details>
+          <details>
+            <summary>Какие товары можно хранить на таможенном складе?</summary>
+            <p>Алкогольная и слабоалкогольная продукция (лицензия РАР), продукты питания, одежда, обувь, табак, лекарства, электроника, бытовая химия и другие импортные товары, помещённые под процедуру таможенного склада.</p>
+          </details>
+          <details>
+            <summary>Сколько стоит хранение и маркировка товара «Честным знаком»?</summary>
+            <p>Стоимость зависит от объёма, категории товара и срока хранения. Оставьте заявку — рассчитаем отдельно.</p>
+          </details>
+          <details>
+            <summary>Какой срок хранения возможен?</summary>
+            <p>Возможность длительного хранения — до 3 лет. Это позволяет гибко планировать продажи и не торопиться с растаможиванием.</p>
+          </details>
+          <details>
+            <summary>Что такое маркировка «Честный знак» и зачем она нужна?</summary>
+            <p>Это обязательная маркировка товаров кодами Data Matrix. Без неё товар нельзя выпустить в свободное обращение. Мы наносим коды прямо на таможенном складе — до растаможки.</p>
+          </details>
+          <details>
+            <summary>Вы маркируете все товары?</summary>
+            <p>Да, работаем со всеми категориями товаров, подлежащими обязательной маркировке: алкоголь, продукты питания, вода, одежда, обувь, БАДы, электроника, парфюм, бытовая химия и многое другое.</p>
+          </details>
+          <details>
+            <summary>Как происходит процедура помещения на склад?</summary>
+            <p>Вы предоставляете документы, мы помещаем груз под процедуру ИМ-70, обеспечиваем хранение, маркировку и дальнейшее оформление.</p>
+          </details>
+          <details>
+            <summary>Нужно ли приезжать лично?</summary>
+            <p>Не обязательно — многие вопросы решаются дистанционно. Но если нужно, ждём вас в рабочее время.</p>
+          </details>
+          <details>
+            <summary>Как с вами связаться?</summary>
+            <p>Телефоны: +7 919 635 70 42, +7 903 307 16 20, +7 903 314 60 07, +7 906 113 13 21. Email: irina_g26@list.ru.</p>
+          </details>
+          <details>
+            <summary>Вы выдаёте товар в выходные?</summary>
+            <p>Нет, склад работает по графику Пн–Пт 9:00–18:00. Отгрузки и выдача — в рабочие часы.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Контакты ================= -->
+    <!-- Телефоны, email, режим, адрес — дословно приложение А ТЗ -->
+    <section class="section section--soft" id="contacts">
+      <div class="container">
+        <div class="section-head">
+          <h2>Контакты</h2>
+        </div>
+        <div class="contacts-grid">
+          <div>
+            <div class="contact-city">Казань</div>
+            <p class="contact-address">Республика Татарстан, Зеленодольский район, Промышленная площадка, строение 7, корпус 2.<br>Склад работает в составе Казанского таможенного поста.</p>
+          </div>
+          <div>
+            <h3>Телефоны</h3>
+            <ul class="contact-list">
+              <li><a href="tel:+79196357042">+7 919 635 70 42</a></li>
+              <li><a href="tel:+79033071620">+7 903 307 16 20</a></li>
+              <li><a href="tel:+79033146007">+7 903 314 60 07</a></li>
+              <li><a href="tel:+79061131321">+7 906 113 13 21</a></li>
+            </ul>
+            <h3>Email</h3>
+            <p><a href="mailto:irina_g26@list.ru">irina_g26@list.ru</a></p>
+          </div>
+          <div>
+            <h3>Режим работы</h3>
+            <p>Пн–Пт 9:00–18:00<br>Сб–Вс — выходной</p>
+            <h3>Мессенджер</h3>
+            <p>Заявки также принимаются через мессенджер MAX.</p>
+          </div>
+        </div>
+        <h3 style="margin-top:26px">Схема проезда</h3>
+        <!-- Встроенная Яндекс.Карта с меткой по фактическому адресу (ТЗ п.5.6: не «по запросу») -->
+        <iframe class="map-frame" title="Карта: таможенный склад ТРЛ — Промышленная площадка, строение 7, корпус 2" src="https://yandex.ru/map-widget/v1/?text=%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%20%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD%2C%20%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B4%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%2C%20%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%207%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%202&z=15" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- ================= Форма заявки ================= -->
+    <section class="section" id="order">
+      <div class="container">
+        <div class="form-wrap">
+          <h2>Заказать звонок</h2>
+          <p>Оставьте имя и телефон — перезвоним в рабочее время: Пн–Пт 9:00–18:00.</p>
+
+          <form class="form" id="lead-form" novalidate>
+            <!-- Honeypot: скрытое поле-ловушка для ботов -->
+            <div class="field field--hp" aria-hidden="true">
+              <label for="hp-website">Сайт</label>
+              <input type="text" id="hp-website" name="company_website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field">
+              <label for="f-name">Ваше имя</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Иван" required>
+              <p class="field-error" id="err-name" role="alert">Укажите имя — как к вам обращаться.</p>
+            </div>
+
+            <div class="field">
+              <label for="f-phone">Телефон</label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (999) 123-45-67" required>
+              <p class="field-error" id="err-phone" role="alert">Укажите телефон — по нему перезвоним.</p>
+            </div>
+
+            <div class="field">
+              <label class="form__consent" for="f-consent">
+                <input type="checkbox" id="f-consent" name="consent" required>
+                <span>Согласен с <a href="politika-obrabotki-personalnyh-dannyh.html" target="_blank" rel="noopener">политикой обработки персональных данных</a> и даю согласие на обработку имени и телефона для обратного звонка.</span>
+              </label>
+              <p class="field-error" id="err-consent" role="alert">Без согласия на обработку данных мы не сможем принять заявку.</p>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--accent btn--big" type="submit" id="submit-btn">Отправить заявку</button>
+            </div>
+
+            <p class="form-alert" id="form-alert" role="alert">Заявка не отправлена. Попробуйте ещё раз или позвоните нам: <a href="tel:+79196357042">+7 919 635 70 42</a>.</p>
+          </form>
+
+          <!-- Экран подтверждения после успешной отправки -->
+          <div class="form form-success" id="form-success" tabindex="-1">
+            <div class="form-success__icon" aria-hidden="true">✓</div>
+            <h3>Заявка принята!</h3>
+            <p id="form-success-text">Мы перезвоним вам в рабочее время: Пн–Пт 9:00–18:00.</p>
+            <a class="btn btn--outline" href="tel:+79196357042">Позвонить сейчас</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Плавающая кнопка ================= -->
+  <!-- Критерий №5: остаётся видимой при прокрутке -->
+  <a class="fab" id="fab" href="#order">Заказать звонок</a>
+
+  <!-- ================= Подвал ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 ООО «Технические решения логистики» (ООО «ТРЛ»)</p>
+      <p><a href="politika-obrabotki-personalnyh-dannyh.html">Политика обработки персональных данных</a></p>
+    </div>
+  </footer>
+
+  <!-- ================= Яндекс.Метрика ================= -->
+  <!-- ИНСТРУКЦИЯ: заменить XXXXXXXX на номер счётчика Метрики (в двух местах ниже).
+       Получить счётчик: metrika.yandex.ru → Добавить счётчик.
+       После замены цель «lead_form» появится в отчёте «Конверсии» автоматически —
+       она отправляется при каждой успешной отправке формы (критерий приёмки №6). -->
+  <script>
+    var METRIKA_ID = 'XXXXXXXX'; // ← вписать реальный номер счётчика
+  </script>
+  <script>
+    // Стандартный код счётчика Метрики (включится только после вписывания реального ID)
+    (function (m, e, t, r, i, k, a) {
+      if (METRIKA_ID === 'XXXXXXXX') return; // плейсхолдер — счётчик ещё не подключён
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+    if (METRIKA_ID !== 'XXXXXXXX') ym(METRIKA_ID, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
+    // Цель: отправка формы заявки
+    function metrikaLeadGoal() {
+      if (METRIKA_ID !== 'XXXXXXXX' && typeof ym === 'function') ym(METRIKA_ID, 'reachGoal', 'lead_form');
+    }
+  </script>
+
+  <script>
+    'use strict';
+
+    /* ============================================================
+       Модель заявки (ТЗ, раздел «Данные»): имя, телефон, дата/время.
+       Хранение — на стороне заказчика (почта/MAX); на сайте не хранится.
+       ============================================================ */
+
+    var CONSENT_POLICY_URL = 'politika-obrabotki-personalnyh-dannyh.html';
+
+    // --- Нормализация телефона к формату +7XXXXXXXXXX ---
+    // Понимает: +7, 7, 8, 9 (без кода), пробелы, дефисы, скобки.
+    function normalizePhone(raw) {
+      var digits = String(raw).replace(/\D/g, '');
+      if (digits.length === 11 && (digits[0] === '7' || digits[0] === '8')) digits = '7' + digits.slice(1);
+      else if (digits.length === 10 && digits[0] === '9') digits = '7' + digits;
+      else if (digits.length === 11 && digits[0] === '9') digits = '7' + digits.slice(1); // 8 забыли, 11 цифр
+      return digits;
+    }
+    function isRussianMobile(digits) {
+      return digits.length === 11 && digits[0] === '7' && ['6', '7', '9'].indexOf(digits[1]) !== -1;
+    }
+    function formatPhone(digits) {
+      if (digits.length !== 11) return null;
+      return '+7 (' + digits.slice(1, 4) + ') ' + digits.slice(4, 7) + '-' + digits.slice(7, 9) + '-' + digits.slice(9);
+    }
+
+    // --- Валидация ---
+    function validateLead(name, phoneRaw, consent) {
+      var errors = {};
+      if (!name.trim()) errors.name = 'Укажите имя — как к вам обращаться.';
+      var digits = normalizePhone(phoneRaw);
+      if (!digits) errors.phone = 'Укажите телефон — по нему перезвоним.';
+      else if (!isRussianMobile(digits)) errors.phone = 'Проверьте номер: должно быть 10 цифр после +7, например +7 (999) 123-45-67.';
+      if (!consent) errors.consent = 'Без согласия на обработку данных мы не сможем принять заявку.';
+      return { errors: errors, digits: digits };
+    }
+
+    // ============================================================
+    // Отправка заявки.
+    // ДЕМО-РЕЖИМ: mailto — открывает почтовый клиент с готовым письмом.
+    // На этапе публикации заменить только эту функцию на реальную доставку
+    // (серверный обработчик: письмо на email заказчика + бот в MAX-организацию).
+    // ============================================================
+    var LEAD_EMAIL = 'irina_g26@list.ru'; // email заказчика из приложения А ТЗ
+
+    function submitLead(lead) {
+      var subject = 'Заявка с сайта — обратный звонок';
+      var body =
+        'Имя: ' + lead.name + '\r\n' +
+        'Телефон: ' + lead.phone + '\r\n' +
+        'Дата и время обращения: ' + lead.submittedAt + '\r\n';
+      window.location.href = 'mailto:' + LEAD_EMAIL +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+      return Promise.resolve({ delivered: 'mailto' });
+    }
+
+    // ============================================================
+    // Логика формы
+    // ============================================================
+    var form = document.getElementById('lead-form');
+    var nameInput = document.getElementById('f-name');
+    var phoneInput = document.getElementById('f-phone');
+    var consentInput = document.getElementById('f-consent');
+    var hpInput = document.getElementById('hp-website');
+    var submitBtn = document.getElementById('submit-btn');
+    var alertBox = document.getElementById('form-alert');
+    var successBox = document.getElementById('form-success');
+    var successText = document.getElementById('form-success-text');
+
+    // Время начала заполнения (антиспам: боты сабмитят мгновенно) —
+    // стартует при загрузке страницы
+    var formOpenedAt = Date.now();
+
+    var MIN_FILL_MS = 3000; // быстрее этого человек форму не заполнит
+
+    function showError(id, on) {
+      document.getElementById(id).classList.toggle('visible', !!on);
+    }
+    function setInvalid(input, on) {
+      input.setAttribute('aria-invalid', on ? 'true' : 'false');
+    }
+
+    function clearErrors() {
+      showError('err-name', false); showError('err-phone', false); showError('err-consent', false);
+      alertBox.classList.remove('visible');
+      setInvalid(nameInput, false); setInvalid(phoneInput, false);
+    }
+
+    // Первичная валидация — только после попытки отправки (не мешаем вводу)
+    var triedSubmit = false;
+    function validateLive() {
+      if (!triedSubmit) return;
+      var v = validateLead(nameInput.value, phoneInput.value, consentInput.checked);
+      showError('err-name', !!v.errors.name);
+      showError('err-phone', !!v.errors.phone);
+      showError('err-consent', !!v.errors.consent);
+      setInvalid(nameInput, !!v.errors.name);
+      setInvalid(phoneInput, !!v.errors.phone);
+      alertBox.classList.remove('visible');
+    }
+    [nameInput, phoneInput, consentInput].forEach(function (el) {
+      el.addEventListener('input', validateLive);
+      el.addEventListener('change', validateLive);
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      triedSubmit = true;
+      clearErrors();
+
+      var v = validateLead(nameInput.value, phoneInput.value, consentInput.checked);
+
+      if (v.errors.name) { showError('err-name', true); setInvalid(nameInput, true); nameInput.focus(); return; }
+      if (v.errors.phone) { showError('err-phone', true); setInvalid(phoneInput, true); phoneInput.focus(); return; }
+      if (v.errors.consent) { showError('err-consent', true); consentInput.focus(); return; }
+
+      // Антиспам: honeypot заполнен или форма отправлена подозрительно быстро.
+      // Пользователю показываем общий блок ошибки — роботу не подсказываем причину.
+      var honeypot = hpInput.value.trim() !== '';
+      var tooFast = Date.now() - formOpenedAt < MIN_FILL_MS;
+      if (honeypot || tooFast) {
+        console.warn('Заявка отклонена антиспамом:', { honeypot: honeypot, tooFast: tooFast });
+        alertBox.classList.add('visible');
+        return;
+      }
+
+      var lead = {
+        name: nameInput.value.trim(),
+        phone: formatPhone(v.digits),
+        submittedAt: new Date().toLocaleString('ru-RU')
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Отправляем…';
+
+      submitLead(lead)
+        .then(function () {
+          form.style.display = 'none';
+          successText.textContent = lead.name + ', мы перезвоним по номеру ' + lead.phone +
+            ' в рабочее время: Пн–Пт 9:00–18:00.';
+          successBox.classList.add('visible');
+          successBox.focus();
+          metrikaLeadGoal(); // цель «отправка формы» для Метрики
+        })
+        .catch(function () {
+          alertBox.classList.add('visible');
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Отправить заявку';
+        });
+    });
+
+    /* ============================================================
+       Плавающая кнопка «Заказать звонок»: видна после прокрутки
+       первого экрана (критерий №5)
+       ============================================================ */
+    var fab = document.getElementById('fab');
+    var hero = document.getElementById('hero');
+    function updateFab() {
+      var heroBottom = hero.offsetTop + hero.offsetHeight;
+      fab.classList.toggle('visible', window.scrollY > heroBottom - 80);
+    }
+    window.addEventListener('scroll', updateFab, { passive: true });
+    updateFab();
+
+    /* ============================================================
+       Мобильное меню
+       ============================================================ */
+    var burger = document.getElementById('burger');
+    var nav = document.getElementById('nav');
+    burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
